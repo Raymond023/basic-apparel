@@ -1,0 +1,100 @@
+:root {
+    /* Primary */
+
+    --DesaturatedRed: hsl(0, 36%, 70%);
+    --SoftRed: hsl(0, 93%, 68%);
+
+    /* Neutral */
+
+    --DarkGrayishRed: hsl(0, 6%, 24%);
+
+    /* Gradients */
+/* 
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+body{
+    background: linear-gradient(hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    
+}
+
+header{
+    padding: 22px;
+}
+main{
+    padding-bottom: 30px;
+}
+picture img{
+    width: 100%;
+}
+.sro{
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+h3{
+    color: var(--DarkGrayishRed);
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    line-height: 1;
+    max-width: 60%;
+    margin: 20px auto;
+    text-align: center;
+    width: 250px;
+}
+h3 span{
+
+    color: var(--DesaturatedRed);
+    display: inline-block;
+    font-weight: 300;
+    line-height: 1;
+    width: 100%;
+}
+p{
+    color: var(--DesaturatedRed);
+    margin: auto;
+    text-align: center;
+    width: 85%;
+}
+form{
+    display: flex;
+    margin: 20px auto;
+    width: 90%;
+}
+.submit{
+    background: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%)), url('images/icon-arrow.svg') no-repeat;
+    background-size: contain;
+    border-color: transparent;
+    border-radius: 15px;
+    margin-left: -5%;
+    padding: 11px 12px;
+    position: relative;
+    color: transparent;
+}
+.submit::after{
+    content: '';
+    background-image: url(images/icon-arrow.svg);
+    left: 25px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.email-input{
+    border-color: var(--DesaturatedRed);
+    border-radius: 17px;
+    padding: 0 15px;
+    width: 90%;
+}

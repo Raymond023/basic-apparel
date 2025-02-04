@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <script defer src="script.js"></script>
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  
+</head>
+<body>
+
+  <header>
+    <a href="/">
+      <img src="images/logo.svg" alt="">
+    </a>
+  </header>
+
+  <main>
+
+    <picture>
+      <source srcset="images/hero-desktop.jpg" media="(min-width: 768px)">
+      <source srcset="images/hero-mobile.jpg" media="(min-width: 320px)">
+      <img src="images/hero-mobile.jpg" alt="">
+    </picture>
+
+    <div>
+      <h1 class="sro">Base Apparel</h1>
+      <h2 class="sro">Email sign-up</h2>
+      <h3>
+        <span>We're</span> coming soon 
+      </h3>
+    
+      <p>
+        Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+    
+      <form class="email-form" action="#" method="post" novalidate>
+        <label class="sro" for="email">Enter Your Email</label>
+        <input class="email-input" id="email" type="email" placeholder="Email Address" autocomplete="email" required>
+        <button class="submit" type="submit">submit</button>
+      </form>
+      <img src="images/icon-error.svg" alt="" >
+    </div>
+
+
+  </main>
+  
+
+  
+  
+</body>
+</html>
