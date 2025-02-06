@@ -76,11 +76,15 @@ form{
     background: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%)), url('images/icon-arrow.svg') no-repeat;
     background-size: contain;
     border-color: transparent;
-    border-radius: 15px;
+    border-radius: 25px;
     margin-left: -5%;
     padding: 11px 12px;
     position: relative;
     color: transparent;
+}
+.submit:hover{
+    background: hsl(0, 80%, 86%);
+    cursor: pointer;
 }
 .submit::after{
     content: '';
@@ -91,10 +95,27 @@ form{
     width: 100%;
     background-repeat: no-repeat;
 }
-
+.submit::before{
+    content: '';
+    background-image: url(images/icon-error.svg);
+    left: -35px;
+    top: 9px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: none;
+}
 .email-input{
     border-color: var(--DesaturatedRed);
     border-radius: 17px;
     padding: 0 15px;
     width: 90%;
+}
+.error{
+    border-color: var(--SoftRed);
+}
+.show::before{
+    content: "";
+    display: inline;
 }
